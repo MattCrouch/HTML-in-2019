@@ -23,15 +23,10 @@
         <h2>Example</h2>
         <picture>
           <source
-            srcset="images/2x-landscape.jpg"
-            media="(min-width: 50rem) and (min-resolution: 2dppx)"
+            srcset="images/2x-landscape.jpg 2x, images/1x-landscape.jpg 1x"
+            media="(min-width: 50rem)"
           />
-          <source srcset="images/1x-landscape.jpg" media="(min-width: 50rem)" />
-          <source
-            srcset="images/2x-square.jpg"
-            media="(min-resolution: 2dppx)"
-          />
-          <source srcset="images/1x-square.jpg" />
+          <source srcset="images/2x-square.jpg 2x, images/1x-square.jpg 1x" />
           <img src="images/1x-landscape.jpg" />
         </picture>
       </section>
@@ -41,15 +36,10 @@
           <code>
 &lt;picture&gt;
   &lt;source
-    srcset=&quot;images/2x-landscape.jpg&quot;
-    media=&quot;(min-width: 50rem) and (min-resolution: 2dppx)&quot;
+    srcset=&quot;images/2x-landscape.jpg 2x, images/1x-landscape.jpg 1x&quot;
+    media=&quot;(min-width: 50rem)&quot;
   /&gt;
-  &lt;source srcset=&quot;images/1x-landscape.jpg&quot; media=&quot;(min-width: 50rem)&quot; /&gt;
-  &lt;source
-    srcset=&quot;images/2x-square.jpg&quot;
-    media=&quot;(min-resolution: 2dppx)&quot;
-  /&gt;
-  &lt;source srcset=&quot;images/1x-square.jpg&quot; /&gt;
+  &lt;source srcset=&quot;images/2x-square.jpg 2x, images/1x-square.jpg 1x&quot; /&gt;
   &lt;img src=&quot;images/1x-landscape.jpg&quot; /&gt;
 &lt;/picture&gt;
           </code>

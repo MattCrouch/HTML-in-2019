@@ -5,13 +5,15 @@
 }
 
 :root {
+  --black: #050505;
   --action-color: #6e2594;
   --highlight-color: #48e5c2;
+  --white: #fdfdfd;
 }
 
 html {
-  background: #fdfdfd;
-  color: #050505;
+  background: var(--white);
+  color: var(--black);
   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 1.5;
@@ -57,6 +59,18 @@ label {
 
 input {
   padding: 0.25rem;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: var(--action-color);
+  color: var(--white);
+  cursor: pointer;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 
 .container {

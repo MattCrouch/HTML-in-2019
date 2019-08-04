@@ -19,10 +19,6 @@ const PLATFORMS = {
 
 // Create a class for the new element
 class SocialSharer extends HTMLElement {
-  constructor() {
-    super();
-  }
-
   // What happens when the element appears on the page
   connectedCallback() {
     // Create a shadow root to encapsulate all styles within the component

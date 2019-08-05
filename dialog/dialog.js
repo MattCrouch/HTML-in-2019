@@ -16,6 +16,7 @@ if (typeof jsDialog.showModal !== "function") {
   // Remove any JS interactions, but leave the HTML version to show fallback
   showHtmlDialog.remove();
   showJSDialog.remove();
+  htmlDialog.setAttribute("open", true);
   jsDialog.remove();
 } else {
   // Open the dialog if it were done through HTML itself
